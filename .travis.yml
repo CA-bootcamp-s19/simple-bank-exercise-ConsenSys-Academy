@@ -8,7 +8,7 @@ before_script:
 script:
   - git clone https://gist.github.com/ce47850a8e2cba6ef366625b665c7fba.git
   - rm ./test/simpleBank.test.js
-  - mv ./ce47850a8e2cba6ef366625b665c7fba.simpleBank.test.js ./test/simpleBank.test.js
+  - mv ./ce47850a8e2cba6ef366625b665c7fba/simpleBank.test.js ./test/simpleBank.test.js
   - cat ./test/simpleBank.test.js
   - ganache-cli &
   - sleep 5
