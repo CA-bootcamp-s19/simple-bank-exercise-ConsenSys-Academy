@@ -1,11 +1,13 @@
 language: node_js
-  - "8"
+  - "10"
 
 before_script:
   - npm install -g ganache-cli
   - npm install -g truffle@5.0.0
 
 script:
+  - git clone https://gist.github.com/ce47850a8e2cba6ef366625b665c7fba.git
+  - ls
   - ganache-cli &
   - sleep 5
   - truffle test
